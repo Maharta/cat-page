@@ -10,10 +10,24 @@
   <body>
     <header>
       <h1>Angora Cat</h1>
-      <nav>
-        <li><a href="#photo">Photos</a></li>
-        <li>Characteristics</li>
-        <li>Facts</li>
+      <nav class="flex-display">
+        <div class="main-nav">
+          <a href="#photo">Photos</a>
+          <a>Characteristics</a>
+          <a>Facts</a>
+        </div>
+
+        <div class="dropdown">
+          <a class="dropmenu" onclick="showDropDown()">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </a>
+          <div id="catDropDown" class="dropdown-content card">
+            <a href="./index.html">Angora Cat</a>
+            <a onclick="changeToPersian()">Persian Cat</a>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -131,5 +145,6 @@
     </main>
 
     <footer></footer>
+    <script src="./assets/cat.js"></script>
   </body>
 </html>
