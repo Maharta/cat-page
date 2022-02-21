@@ -2,7 +2,11 @@
   box-sizing: border-box;
 }
 
-header{
+ul {
+  padding-left: 20px;
+}
+
+header {
   display: inline;
 }
 
@@ -33,7 +37,10 @@ body {
   display: block;
 }
 
-.dropdown-content a {
+.dropdown-content > a {
+  margin-bottom: 4px;
+  border-radius: 8px;
+  margin-right: 0;
   padding: 12px;
   display: block;
   background-color: #3a484e;
@@ -59,8 +66,6 @@ nav {
   position: sticky;
   top: 0;
 }
-
-
 
 .photo-container figure {
   margin: 0;
@@ -172,11 +177,9 @@ nav a {
   width: 77%;
 }
 
-
-.head-container{
+.head-container {
   background-color: #3a484e;
   color: white;
-
 }
 
 h1 {
@@ -191,6 +194,7 @@ aside {
 
 .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 60px;
 }
@@ -232,14 +236,74 @@ aside img {
   width: 100%;
 }
 
-@media screen and (max-width: 900px) {
+#profile img {
+  object-fit: cover;
+  border: none;
+  max-width: fit-content;
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    padding: 24px 35px 0px 35px;
+  }
+
+  table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-nav {
+    padding: 0px 35px 24px 35px;
+  }
+
+  #facts {
+    margin-bottom: 0;
+  }
+
+  nav a {
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+
+  .dropdown {
+    margin-right: 0;
+  }
+
+  .dropmenu {
+    margin-right: 20px;
+  }
+
+  .flex,
+  .photo-container {
+    margin-left: 0;
+  }
+  .container {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .flex.card {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    padding: 24px;
+  }
+
+  .dropdown-content {
+    margin-right: 0;
+    right: 0;
+  }
+
+  .dropdown-content > a {
+    margin-bottom: 4px;
+  }
+
+  article figure {
+    margin: 0;
+  }
+
   #content,
   aside {
     width: 100%;
     margin: 0;
-  }
-
-  .container {
-    flex-wrap: wrap;
   }
 }

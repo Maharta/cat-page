@@ -1,6 +1,3 @@
-function showDropDown(){
-    document.getElementById('catDropDown').classList.toggle('show');
+function showDropDown() {
+  document.getElementById("catDropDown").classList.toggle("show");
 }
-
-
-
